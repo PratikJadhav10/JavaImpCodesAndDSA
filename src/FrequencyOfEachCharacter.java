@@ -7,7 +7,8 @@ public class FrequencyOfEachCharacter {
         String words = "aaabbbbcccaabbcc";
 
         Map<Character, Long> charFrequency =  words.chars()
-                .mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                .mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(),
+                        Collectors.counting()));
 
         charFrequency.forEach((character, frequency) -> {
             System.out.println("Character: " + character + ", Frequency: " + frequency);
