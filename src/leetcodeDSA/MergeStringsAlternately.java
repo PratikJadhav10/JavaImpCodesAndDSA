@@ -1,4 +1,4 @@
-package leetcode;
+package leetcodeDSA;
 
 public class MergeStringsAlternately {
         public String mergeAlternately(String word1, String word2) {
